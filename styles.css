@@ -1,0 +1,317 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ul, li, h1, h2, h5, h4, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+body {
+    margin: 0;
+    font-family: RedHatText,"Red Hat Text",Overpass,Overpass,"Helvetica Neue",Arial,sans-serif;
+}
+.nav {
+    background-color: #131313;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 1rem 0;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-options {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.nav-option-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.nav-option-items .option {
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 420;
+}
+.btn {
+    border: 1px solid white;
+    padding: 0;
+    padding: .75rem 2rem;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: .2em;
+    cursor: pointer;
+}
+.btn-dark {
+    background-color: #131313;
+    color: white;
+    transition: background-color 200ms linear;
+}
+.btn-dark:hover {
+    background-color: white;
+    color: black;
+}
+.btn-light {
+    background-color: white;
+    border: 1px solid #131313;
+    color: #131313;
+    transition: background-color 200ms linear;
+}
+.btn-light:hover {
+    background-color: #131313;
+    color: white;
+}
+.redhat-logo {
+    width: 130px;
+    justify-self: flex-end;
+}
+.header {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header::before {
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-image: url("https://www.redhat.com/cms/managed-files/Summit-2021-homepage-hero-3d-bg-2000x480.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.header-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-body > .summit-img {
+    width: 170px;
+    margin-bottom: 2rem;
+}
+.header-body > .open-img {
+    width: 300px;
+}
+.header-body p {
+
+    font-weight: 700!important;
+}
+
+.section {
+    margin: auto;
+}
+.summit-connect {
+    background-color: white;
+    margin-top: -100px;
+    border: 1px solid #e7e7e7;
+    max-width: 1170px;
+}
+
+.summit-connect > .container{
+    padding: 50px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.summit-lead {
+    text-align: center;
+    max-width: 66.66666%;
+    /* margin-bottom: 2rem; */
+}
+.summit-connect > .container::after {
+    display: block;
+    margin-top: 2rem;
+    content: ' ';
+    width: 100%;
+    border-bottom: 1px solid #bdbdbd;
+}
+.summit-lead > h1 {
+    font-size: 1.9rem;
+}
+.summit-lead > p {
+    font-size: 1.1rem;
+    /* border-bottom: 1px solid black; */
+}
+.spots-container {
+    text-align: center;
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 20px;
+}
+.spots-container > h1 {
+    color: red;
+    margin-bottom: 2rem;
+}
+.spots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.spot > h1 {
+    font-size: 1.8rem;
+}
+.spot > h3 {
+    margin-bottom: 1.5rem;
+}
+.spots-container::after {
+    content: ' ';
+    display: block;
+    border-bottom: 1px solid #bdbdbd;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.a-link {
+    text-decoration: none;
+    color: #06c;
+}
+.all-city-info-link {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.all-city-info-link > span:hover{
+    transform: translateX(100px)
+}
+.proposal {
+    background-color: #f2f2f2;
+    padding: 4.5rem 0;
+}
+.proposal-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.proposal-lead h1 {
+    font-size: 1.8rem;
+}
+.proposal-lead p {
+    font-size: 1.15rem;
+}
+.btn-red {
+    background: red;
+    color: white;
+    padding: 1.1rem 2rem;
+    border-radius: .3rem;
+}
+.ve-container > h1 {
+    margin-bottom: 2rem;
+}
+.virtual-experience{
+    text-align: center;
+    padding: 4rem 0;
+    margin: auto;
+}
+.ve-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.ve-card {
+    display: flex;
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e7e7e7;
+    /* flex: 0 0 41.66666%; */
+    max-width: 41.66666%;
+}
+.ve-card > img {
+    height: 100px;
+    width: 100px;
+}
+.scroll-up-animation {
+    animation: scroll-up 2s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.winning-attendees {
+    margin-bottom: 1rem;
+}
+.winning-attendees > h1{
+    text-align: center;
+    font-size: 2.3rem;
+}
+.winning-attendees > p {
+    text-align: center;
+}
+
+.winning-attendees-body {
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    align-content: space-between;
+}
+.winning-attendees-body p {
+    font-size: 1.1rem;
+}
+.youtube-video {
+    justify-self: end;
+}
+
+.footer {
+    background-color: #131313;
+}
+.footer-body {
+    display: grid;
+    z-index: 20;
+    padding: .7rem;
+    color: #aaa;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.footer-lead {
+    justify-self: center;
+    font-size: .7rem;
+    display: flex;
+}
+.footer-lead > p {
+    margin-right: 20px;
+}
+.footer-options {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.footer-options .option {
+    cursor: pointer;
+    padding: 0 5px;
+    text-decoration: underline;
+    border-right: 1px solid #aaa;
+}
+.footer-options .option:hover {
+    color: white;
+}
+.footer-options .option:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+@keyframes scroll-up {
+    0%{
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
